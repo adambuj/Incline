@@ -11,6 +11,7 @@ import { HabitLandingPage } from '../pages/habit-landing/habit-landing';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DiscoverPage } from '../pages/discover/discover';
 import { HistoryPage } from '../pages/history/history';
+import { NotificationsPage } from '../pages/notifications/notifications';
 import { MorePage } from '../pages/more/more';
 import { ForgotPage } from '../pages/forgot/forgot';
 import { WorkHabitsPage } from '../pages/work-habits/work-habits';
@@ -67,6 +68,7 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation';
     DiscoverPage,
     MorePage,
     HistoryPage,
+    NotificationsPage,
     TestDashboardPage,
     ForgotPage,
     WorkHabitsPage,
@@ -99,6 +101,7 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation';
     DiscoverPage,
     MorePage,
     HistoryPage,
+    NotificationsPage,
     TestDashboardPage,
     ForgotPage,
     WorkHabitsPage,
@@ -127,7 +130,6 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation';
     HabitGetService,
     HabitDeleteService,
     HabitPutService,
-    LocalNotifications,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     HabitDeleteService,
   ]

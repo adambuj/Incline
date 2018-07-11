@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Notifications
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-label>Remind me at: </ion-label>
+      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="notifyTime" (ionChange)="timeChange($event)"></ion-datetime>
+    </ion-item>
+  </ion-list>
+</ion-content>
+ 
+<ion-footer>
+  <button (click)="addNotifications()" ion-button color="primary" full>Schedule Notification</button>
+  <button (click)="cancelAll()" ion-button color="danger" full>Cancel All</button>
+</ion-footer>
